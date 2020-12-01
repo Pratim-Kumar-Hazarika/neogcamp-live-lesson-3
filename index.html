@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Library</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>  Pratim's component library</h1>
@@ -18,6 +19,9 @@
     <p>Let me show you normal text.This is free flowing and
         we will wrap at the end.
     </p>
+    <p>This paragraph will have
+        a <strong>bold</strong> text
+    </p>
     <small>This is relatively small</small>
 
     <hr>
@@ -25,11 +29,11 @@
     <h2>@containers</h2>
     
     <h3>fluid container</h3>
-    <div>This is fluid container and it will go till the
+    <div class=" container ">This is fluid container and it will go till the
          end of the page</div>
 
-    <h3>fluid container</h3>
-    <div>This is a centered container and it will go till the specified
+    <h3>centercontainer</h3>
+    <div class="container container-center">This is a centered container and it will go till the specified
         path
     </div>
 
@@ -37,8 +41,8 @@
 
     <h2>@Links</h2>
 
-    <a href="/">Primary Link</a>
-    <a href="/">Secondary Link</a>
+    <a class="link primary-link" href="/">Primary Link</a>
+    <a  class="link secondary-link"href="/">Secondary Link</a>
 
     <hr>
 
@@ -46,18 +50,18 @@
 
     <h3>unordered lists</h3>
 
-    <ul>
-        <li>Item One</li>
-        <li>Item Two</li>
-        <li>Item Three</li>
+    <ul class="list-non-bullet">
+        <li >Item One</li>
+        <li >Item Two</li>
+        <li >Item Three</li>
     </ul>
 
     <h3>unordered inline list</h3>
 
-    <ul>
-        <li>Inline item one</li>
-        <li>Inline item two</li>
-        <li>Inline item three</li>
+    <ul class="">
+        <li class="list-item-inline">Inline item one</li>
+        <li class="list-item-inline">Inline item two</li>
+        <li class="list-item-inline">Inline item three</li>
     </ul>
 
 
@@ -73,17 +77,17 @@
 
     <h2>@nav</h2>
 
-    <nav>
-        <div>IamBrand</div>
-        <ul>
-            <li>
-                <a href="/">home</a>
+    <nav class="navigation container">
+        <di class="nav-brand">IamBrand</div>
+        <ul class="list-non-bullet nav-pills" >
+            <li class="list-item-inline">
+                <a class="link link-active"href="/">home</a>
             </li>
-            <li>
-                <a href="/">products</a>
+            <li class="list-item-inline">
+                <a class="link"href="/">products</a>
             </li>
-            <li>
-                <a href="">about</a>
+            <li class="list-item-inline">
+                <a class="link" href="">about</a>
             </li>
         </ul>
     </nav>
@@ -92,35 +96,50 @@
 
     <h2>@header</h2>
     
-    <header>
-        <img src="images/heroo.svg" />
-        <h1>heading inside header</h1>
+    <header class="hero">
+        <img class="hero-img" src="images/heroo.svg" />
+        <h1 class="hero-heading">Pratim the <span class="hero-inverted">web developer</span> </h1>
     </header>
 
     <hr>
 
     <h2>@section</h2>
 
-    <section>
-        <h3>white section</h3>
-        <p>This will have white background</p>
+    <section class="section">
+        <div class="container container-center">
+            <h1>white section</h1>
+        <p>JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat.</p>
+        </div>
+        
     </section>
 
-    <section>
-        <h3>white section</h3>
-        <p>This will have gray background</p>
+    <section class="section ow">
+        <div class="container container-center">
+            <h1>white section</h1>
+            <p>JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat.</p>
+        </div>
+      
     </section>
 
     <hr>
 
     <h2>@footer</h2>
 
-    <footer>
-        <div>Some small heading inside footer</div>
-        <ul>
-            <li>socialone</li>
-            <li>socialTwo</li>
-            <li>socialThree</li>
+    <footer class="footer ">
+        <div class="footer-header">Some small heading inside footer</div>
+        <ul class="social-links list">
+           <li class="list-item-inline" >
+               <a class="link" href="/">
+            Socialone</a>
+           </li>
+           <li class="list-item-inline">
+            <a class="link" href="/">
+         Socialtwo</a>
+        </li>
+        <li class="list-item-inline">
+            <a class="link" href="/">
+         Socialthree</a>
+        </li>
         </ul>
     </footer>
 
